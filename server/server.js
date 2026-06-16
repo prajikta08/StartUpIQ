@@ -12,8 +12,9 @@ const app = express();
 
 app.use(cors({
   origin: [
-    'http://localhost:5173',          // Vite dev server
-    'https://your-app.vercel.app'     // Production frontend
+    'http://localhost:5173',
+    'https://startupiq.vercel.app',
+    /\.vercel\.app$/
   ],
   credentials: true
 }))
