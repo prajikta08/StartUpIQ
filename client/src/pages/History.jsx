@@ -7,7 +7,7 @@ function History() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/validate/history')
+    fetch(`${import.meta.env.VITE_API_URL}/validate/history`)
       .then(r => r.json())
       .then(data => { setHistory(data); setLoading(false) })
       .catch(() => setLoading(false))
