@@ -224,31 +224,6 @@ Get the last 10 validated ideas.
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-Clean minimal form to enter your startup idea with example prompts.
-
-### Results Page
-Full AI-generated analysis with an animated score gauge, breakdown bars, and 7 analysis cards.
-
-### History Page
-Browse all your previously validated startup ideas.
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first.
-
-1. Fork the repo
-2. Create your branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m "add amazing feature"`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
----
-
 ## 📄 License
 
 MIT License — feel free to use this project for learning or building your own version.
