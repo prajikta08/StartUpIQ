@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+// Configurable via env var so a future Groq model deprecation
+// doesn't require a code change + redeploy — just update the
+// GROQ_MODEL env var on Render (and locally in .env).
+const MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
+
 export const analyzeStartupIdea = async (idea) => {
 
   const prompt = `You are a world-class startup analyst. Analyze this startup idea and respond ONLY with valid JSON. No markdown, no backticks, no explanation, no text before or after. Just raw JSON.
@@ -46,7 +51,7 @@ Return ONLY this JSON with no other text:
         'Content-Type': 'application/json'
       },
       data: {
-        model: 'llama-3.3-70b-versatile',
+        model: MODEL,
         messages: [
           {
             role: 'system',
